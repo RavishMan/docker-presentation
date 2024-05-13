@@ -18,7 +18,7 @@ COPY . .
 # Определение переменной.
 # По умолчанию - пытается найти ранее определенную переменную.
 # При docker compose build в приоритете - переменная из docker-compose.yml
-# При docker build в приоритете - он игнорирует docker-compose.yml
+# При docker build - он игнорирует docker-compose.yml
 ARG APP_VERSION
 RUN echo "Value is: $APP_VERSION"
 
