@@ -9,3 +9,8 @@ services:
       APP_VERSION: ${APP_VERSION}
     ports:
       - "8080:80"
+    volumes:
+      - app_volume:/app:ro
+
+volumes:
+  app_volume:
